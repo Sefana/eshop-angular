@@ -1,0 +1,10 @@
+<div class="card-deck">
+    <div class="card" *ngFor="let produit of produits">
+        <div class="card-header">Name :  {{produit.name}} </div>
+        <div class="card-body">
+            <h3 class="card-title">Photo : {{produit.photo}}</h3>
+            <p class="card-text">Type : {{produit.type}}</p>
+        </div>
+        <div class="card-footer">Prix : {{produit.price}} <button class="btn btn-success float-lg-right">Acheter</button> </div>
+    </div>
+</div>
